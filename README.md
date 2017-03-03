@@ -1,9 +1,6 @@
-### NL Maps
-
-
-### Using Leaflet
-
-#### Prerequisites:
+## Using leaflet for NL Maps
+[Demo](https://nlmaps.github.io/leaflet/leaflet_nlmaps.html)
+### Prerequisites:
 * [Leaflet](http://leaflet.com) for plotting the map:
 ```
 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
@@ -17,7 +14,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4leaflet/1.0.1/proj4leaflet.min.js"></script>
 ```
 
-#### Map initialization
+### Map initialization
 ```
 L.map('nlmap', {
   zoom: 4,
@@ -33,17 +30,19 @@ L.map('nlmap', {
 });
 ```
 
-## Open Street Maps
-In contrast, how open street maps initialization works:
+## Using leaflet for Open Street Maps
 
-#### Prerequisites:
+In contrast, how open street maps initialization works
+
+[Demo](https://nlmaps.github.io/leaflet/leaflet_openstreetmaps.html)
+### Prerequisites:
 * [Leaflet](http://leaflet.com) for plotting the map:
 ```
 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 ```
 
 
-#### Map initialization
+### Map initialization
 ```
 L.map('nlmap', {
   layers: [new L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png')],
