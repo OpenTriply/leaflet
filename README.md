@@ -1,4 +1,4 @@
-# Use *NLmaps* in Leaflet
+# How to use *NLmaps* in Leaflet
 
 See [the online demo](https://nlmaps.github.io/leaflet/leaflet_nlmaps.html).
 
@@ -42,7 +42,11 @@ L.map('nlmap', {
 });
 ```
 
-# Using OpenStreetMaps in Leaflet
+# Sites that already use *NLmaps*+Leaflet
+
+  - [Kadaster Linked Data Platform](https://data.pdok.nl/yasgui#query=prefix+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0Aprefix+top%3A+%3Chttp%3A%2F%2Fbrt.basisregistraties.overheid.nl%2Fdef%2Ftop10nl%23%3E%0Aprefix+geo%3A+%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aselect+%3Ffeature+%3FwktLiteral+%7B%0A++%3Ffeature+rdf%3Atype+top%3AHeemtuin+.%0A++%3Ffeature+geo%3AhasGeometry+%3Fgeometry+.%0A++%3Fgeometry+geo%3AasWKT+%3FwktLiteral+.%0A%7D%0Alimit+100%0A&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=%2Fsparql&requestMethod=POST&tabTitle=Query&headers=%7B%7D&outputFormat=leaflet) for visualizing SPARQL query results.
+
+# How to use OpenStreetMaps in Leaflet
 
 For comparison, this is how the installation for OpenStreetMaps works.
 
