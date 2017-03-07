@@ -1,27 +1,19 @@
-<html><head>
-
-	<title>Open Street Maps | Leaflet</title>
-
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
-</head>
-<body>
-
-
-
-<div style="height:500px;" id="nlmap"/>
-
-
-
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-
-<script>
-    L.map('nlmap', {
-      layers: [new L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png')],
-			center: [ 52.2112,5.9699],
-			zoom:9
-    });
-</script>
-</body>
+<html>
+  <head>
+    <title>Open Street Maps | Leaflet</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
+  </head>
+  <body>
+    <div style="height:500px;" id="nlmap"/>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script>
+      L.map('nlmap', {
+        center: [52.2112, 5.9699],
+        layers: [new L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png')],
+        zoom: 9
+      });
+    </script>
+  </body>
 </html>

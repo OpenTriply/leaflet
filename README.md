@@ -1,21 +1,33 @@
-## Using leaflet for NL Maps
-[Demo](https://nlmaps.github.io/leaflet/leaflet_nlmaps.html)
-### Prerequisites:
-* [Leaflet](http://leaflet.com) for plotting the map:
-```
+# Use *NLmaps* in Leaflet
+
+See [the online demo](https://nlmaps.github.io/leaflet/leaflet_nlmaps.html).
+
+## Prerequisites
+
+* Include [Leaflet](http://leaflet.com) for plotting the map.
+
+```html
 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 ```
-* [Proj4Js](http://proj4js.org/) to defines mappings between different coordinate systems:
-```
+
+* Include [Proj4Js](http://proj4js.org/) to map between different
+  coordinate systems.
+
+```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.4.1/proj4.js"></script>
 ```
-* [Proj4Leaflet](http://kartena.github.io/Proj4Leaflet/) to map the NL Map coordinates to the leaflet coordinate system (WGS84):
-```
+
+* Include [Proj4Leaflet](http://kartena.github.io/Proj4Leaflet/) to
+  map coordinates used by *NLmaps* to coordinates used by Leaflet
+  (WGS84):
+
+```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4leaflet/1.0.1/proj4leaflet.min.js"></script>
 ```
 
-### Map initialization
-```
+## Map initialization
+
+```js
 L.map('nlmap', {
   zoom: 4,
   center: [ 52.2112,5.9699],
@@ -30,20 +42,24 @@ L.map('nlmap', {
 });
 ```
 
-## Using leaflet for Open Street Maps
+# Using OpenStreetMaps in Leaflet
 
-In contrast, how open street maps initialization works
+For comparison, this is how the installation for OpenStreetMaps works.
 
-[Demo](https://nlmaps.github.io/leaflet/leaflet_openstreetmaps.html)
-### Prerequisites:
+See [the online demo](https://nlmaps.github.io/leaflet/leaflet_openstreetmaps.html).
+
+
+## Prerequisites
+
 * [Leaflet](http://leaflet.com) for plotting the map:
-```
+
+```html
 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 ```
 
+## Map initialization
 
-### Map initialization
-```
+```js
 L.map('nlmap', {
   layers: [new L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png')],
   center: [ 52.2112,5.9699],
